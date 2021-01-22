@@ -1,0 +1,23 @@
+.text-field{
+    outline: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid $_silver;
+}
+.btn{
+    display:inline-block;
+    text-align: center;
+    padding:0.7em;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.btn-loginForm{
+    width: 100%;
+    background: $background-body;
+    text-transform: uppercase;
+    color:$_white;
+    font-weight: 900;
+}

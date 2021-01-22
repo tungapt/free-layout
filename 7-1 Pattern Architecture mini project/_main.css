@@ -1,0 +1,514 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+@keyframes to-left {
+  0% {
+    left: -300px;
+    transform: rotate(0deg);
+    background: transparent;
+  }
+  100% {
+    left: -137px;
+    transform: rotate(60deg);
+    background: #ffffff40;
+  }
+}
+@keyframes to-right {
+  0% {
+    right: -600px;
+    transform: rotate(-5deg);
+    background: transparent;
+  }
+  100% {
+    right: -160px;
+    transform: rotate(-24deg);
+    background: linear-gradient(38deg, #605e5e, #0000001a);
+  }
+}
+@keyframes to-center {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.text-field {
+  outline: none;
+  padding: 0.8em;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7em;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.btn-loginForm {
+  width: 100%;
+  background: linear-gradient(45deg, #06d6e0, #f606ff);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+}
+
+#formLogin {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #06d6e0, #f606ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#formLogin::after {
+  content: "";
+  width: 300px;
+  height: 300px;
+  background: #ffffff40;
+  opacity: 0.4;
+  position: absolute;
+  left: -137px;
+  top: 0;
+  border-radius: 15px;
+  transform: rotate(60deg);
+  z-index: 0;
+  animation: to-left 1s;
+}
+#formLogin::before {
+  content: "";
+  width: 300px;
+  height: 600px;
+  background: linear-gradient(38deg, #605e5e, #0000001a);
+  opacity: 0.4;
+  position: absolute;
+  right: -160px;
+  top: 26px;
+  border-radius: 15px;
+  transform: rotate(-24deg);
+  z-index: 0;
+  animation: to-right 1.5s;
+}
+#formLogin form {
+  padding: 3.5em;
+  width: calc(100% - 24px);
+  max-width: 500px;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 2;
+  animation: to-center 2s ease-out;
+}
+#formLogin form h3 {
+  margin-top: 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+#formLogin form input {
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+#formLogin form input:last-child {
+  margin-bottom: 0;
+}
+#formLogin form a.btn-loginForm {
+  margin-top: 2em;
+}
+#formLogin form p {
+  text-align: center;
+  color: #ccc;
+}
+#formLogin form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+#formLogin form div a {
+  margin: 0 1em;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  width: 135px;
+}
+#formLogin form div a:nth-child(1) {
+  color: #1877f2;
+}
+#formLogin form div a:nth-child(2) {
+  color: #f14236;
+}
+#formLogin form span {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+#formLogin form span a {
+  text-decoration: none;
+  color: #5cbded;
+}
+
+@media all and (max-width: 768px) {
+  #formLogin form {
+    height: calc(100% - 180px);
+  }
+}
+@media all and (max-width: 520px) {
+  #formLogin form {
+    padding: 1.5em;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+  }
+}
+
+/*# sourceMappingURL=_main.css.map */

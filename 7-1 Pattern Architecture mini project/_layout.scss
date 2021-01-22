@@ -1,0 +1,100 @@
+#formLogin{
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background: $background-body;
+    @include align-center-items;
+    &::after{
+        content: "";
+        width: 300px;
+        height: 300px;
+        background: #ffffff40;
+        opacity: 0.4;
+        position: absolute;
+        left: -137px;
+        top: 0;
+        border-radius: 15px;
+        transform: rotate(60deg);
+        z-index: 0;
+        animation: to-left 1s;
+    }
+    &::before{
+        content: "";
+        width: 300px;
+        height: 600px;
+        background: linear-gradient(38deg, #605e5e, #0000001a);
+        opacity: 0.4;
+        position: absolute;
+        right: -160px;
+        top: 26px;
+        border-radius: 15px;
+        transform: rotate(-24deg);
+        z-index: 0;
+        animation: to-right 1.5s;
+    }
+    form{
+        padding: 3.5em;
+        width: calc(100% - 24px);
+        max-width: 500px;
+        background: #fff;
+        box-sizing: border-box;
+        z-index: 2;
+        animation: to-center 2s ease-out;
+        h3{
+            margin-top: 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        input{
+            margin-bottom:1.2em;
+            text-align: center;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        a.btn-loginForm{
+            margin-top: 2em;
+        }
+        p{
+            text-align: center;
+            color:$_silver
+        }
+        div{
+            @include align-center-items;
+            margin-bottom: 2em;
+            a{
+                margin:0 1em;
+                border:1px solid $_silver;
+                font-weight: bold;
+                width: 135px;
+                &:nth-child(1){
+                    color:$_blue_facebook;
+                }
+                &:nth-child(2){
+                    color:$_red_google;
+                }
+            }
+        }
+        span{
+            display:block;
+            text-align: center;
+            margin-bottom: 0;
+            a{
+                text-decoration: none;
+                color:$_blue_1
+            }
+        }
+    }
+}
+@media all and (max-width:768px){
+    #formLogin form {
+        height: calc(100% - 180px);
+    }
+}
+@media all and (max-width:520px){
+    #formLogin form {
+        padding: 1.5em;
+        width: calc(100% - 24px);
+        height: calc(100% - 24px);
+    }
+}

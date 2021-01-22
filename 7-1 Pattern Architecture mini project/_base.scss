@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$font-size-base: 16px;
+$link_folder_img: '/vendors/img';
+$background-body: linear-gradient(45deg,#06d6e0,#f606ff);
+$_silver:#ccc;
+$_white:#fff;
+$_blue_facebook:#1877f2;
+$_red_google: #f14236;
+$_blue_1:#5cbded;
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+@mixin align-center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes to-left {
+    0%{
+        left: -300px;
+        transform: rotate(0deg);
+        background: transparent;
+    }
+    100%{
+        left: -137px;
+        transform: rotate(60deg);
+        background: #ffffff40;
+    }
+}
+@keyframes to-right {
+    0%{
+        right: -600px;
+        transform: rotate(-5deg);
+        background: transparent;
+    }
+    100%{
+        right: -160px;
+        transform: rotate(-24deg);
+        background: linear-gradient(38deg, #605e5e, #0000001a);
+    }
+}
+@keyframes to-center {
+    0%{
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
